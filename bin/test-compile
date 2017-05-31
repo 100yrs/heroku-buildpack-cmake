@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# bin/compile <build-dir> <cache-dir>
+# bin/test-compile BUILD_DIR CACHE_DIR ENV_DIR
 
 indent() {
   sed -u 's/^/       /'
@@ -9,7 +9,7 @@ arrow() {
   sed -u 's/^/-----> /'
 }
 
-echo "Installing cmake" | arrow
+echo "TEST: Installing cmake" | arrow
 
 # change to the the BUILD_DIR ($1)
 cd $1
